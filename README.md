@@ -1,5 +1,9 @@
-# text-summarization
+# Summarizer
 
-A simple web application project which helps a user to summarize a large text to a short summary which is approximately 30% the size of original text.
+• Web Application useful for Text Summarization
+• Reduces text size by 30% of original text
+• Used Natural Language Processing with spaCy
+• Back-end development in Flask
+• Deployment on Heroku
 
 ### Try it out: https://arcaneab-text-summarizer.herokuapp.com/
