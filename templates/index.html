@@ -36,76 +36,24 @@
       <form action="{{ url_for('predict')}}"method="POST">
         <div class="mb-3">
           <label for="input" class="form-label">Please avoid using punctuations.</label>
-          <input
-            type="text"
+          <textarea
+            style='height:auto'
             class="form-control"
             name="input"
             id="input"
             aria-describedby="emailHelp"
-          />
+          >
+          </textarea>
         </div>
-        <!-- <div class="mb-3">
-          <label for="desc" class="form-label">Description</label>
-          <input type="text" name="desc" class="form-control" id="desc" />
-        </div> -->
     
         <button type="submit" class="btn btn-outline-success">Summarize</button>
       </form>
-
-      <!-- <form action="{{ url_for('predict')}}"method="post">
-        <input type="text" name="experience" placeholder="Experience" required="required" />
-          <input type="text" name="test_score" placeholder="Test Score" required="required" />
-      <input type="text" name="interview_score" placeholder="Interview Score" required="required" />
-  
-          <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-      </form> -->
     </div>
     <div class="container my-5">
       <h2>Text Summary</h2>
       <div>
         {{ summary }}
       </div>
-      <!-- {% if allTodo|length==0 %}
-      <div class="alert alert-warning alert-dismiss" role="alert">
-        No tasks found. Make your Todo list by using above form.
-      </div>
-      {% else %}
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Item</th>
-            <th scope="col">Title</th>
-            <th scope="col">Description</th>
-            <th scope="col">Time</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for todo in allTodo %}
-          <tr>
-            <th scope="row">{{loop.index}}</th>
-            <td>{{todo.title}}</td>
-            <td>{{todo.desc}}</td>
-            <td>{{todo.date_created}}</td>
-            <td>
-              <a
-                href="/delete/{{todo.item}}"
-                type="button"
-                class="btn btn-outline-danger btn-sm mx-1"
-                >Delete</a
-              >
-              <a
-                href="/update/{{todo.item}}"
-                type="button"
-                class="btn btn-outline-warning btn-sm mx-1"
-                >Update</a
-              >
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      {% endif %} -->
     </div>
 
 
